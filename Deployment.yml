@@ -17,4 +17,4 @@ spec:
           image: pijey03/k8s-test
           imagePullPolicy: Always
           ports:
-          - containerPort: 80
+          - containerPort: 8080
