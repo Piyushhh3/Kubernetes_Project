@@ -1,20 +1,20 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: kloudinsight
+   name: pijey
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     app: kloudinsight
+     app: pijey
    template:
       metadata:
         labels:
-          app: kloudinsight
+          app: pijey
       spec:
        containers:
-        - name: kloudinsight
-          image: kloudinsight/pipeline-demo
+        - name: pijey
+          image: pijey03/k8s-test
           imagePullPolicy: Always
           ports:
           - containerPort: 80
